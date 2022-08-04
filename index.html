@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root">
+      <h1>Senha Cipher</h1>
+    </div>
+    <main>
+      <section class="introducao">
+        <h2> Crie uma senha segura com criptografia de César 🔒</h2> <br>
+        <p> <strong>Que tal proteger suas contas de e-mail, redes sociais e sites?</strong> <br>
+          Aqui na Senha Cipher você pode gerar senhas seguras utilizando a criptografia usada por Julio César<br> para enviar mensagens secretas aos seus soldados durante as batalhas.
+        </p>
+        <h3>Siga as instruções abaixo:</h3>
+        <ul>
+          <li>Digite sua senha para ser cifrada </li>
+        <li>Insira um número que será sua chave de deslocamento para a cifragem</li>
+        <li>Clique no botão para cifrar sua senha</li>
+        <li>Anote sua nova senha em um lugar seguro</li>
+        </ul>
+        <p> <em>Caso queira voltar sua senha para o formato sem cifragem, basta digitar a senha no campo de texto, <br>inserir a chave de deslocamento que foi usada e clicar no botão de decifrar</em></p>
+      </section>
+      <section class="formulario">
+        <form class="textBox">
+          <label for="getText"> Senha sem cifra </label>
+          <input type="text" id="getText" value="" > <br>
+          <label for="chave">Chave </label>
+          <input type="number" id="offset" min="1"> <br>
+          <label for="codeText"> Senha cifrada </label>
+          <input type="text" id="codeText" value="">
+          <div class="buttons">
+          <button class="cifrar" id="cifrar" type="submit">Cifrar</button>
+          <button class="decifrar" id="decifrar" type="submit">Decifrar</button>
+        </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      Criado por Michelle Santana <br>
+       Aluna SAP008 -- &lt;Laboratoria&reg;&gt;
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
