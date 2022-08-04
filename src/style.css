@@ -84,3 +84,13 @@ ul {
   align-items: center;
   margin-inline: 2px;
 }
+
+footer {
+  background-color: rgba(46, 146, 228, 0.856);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-inline: 20px;
+  margin-bottom: 0%;
+  font-size: 20px;
+}
