@@ -2,7 +2,7 @@ const cipher = {
   encode: (offset, string) => {
     let resultado = "", encode;
 
-    if (offset === null || string === null)
+    if (offset === null || string === null || offset === 0 || string === 0)
       throw TypeError("Mensagem inválida");
 
     for (let i = 0; i < string.length; i++) {
@@ -17,7 +17,7 @@ const cipher = {
   decode: (offset, string) => {
     let resultado = "", decode;
 
-    if (offset === null || string === null)
+    if (offset === null || string === null || offset === 0 | string === 0)
       throw TypeError("Mensagem inválida");
 
     for (let i = 0; i < string.length; i++) {
